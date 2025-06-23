@@ -114,10 +114,6 @@ export default function Home() {
               Passionate about clean code, user experience, and bringing ideas to life through code.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
-                <Download className="mr-2" size={20} />
-                Download Resume
-              </button>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
