@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Github, Linkedin, Mail, Download, ExternalLink, Menu, X, Sun, Moon } from 'lucide-react';
+import { Github, Linkedin, Mail, Download, ExternalLink, Menu, X, Sun, Moon, Facebook } from 'lucide-react';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Portfolio</h1>
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Rtzz</h1>
             </div>
             
             {/* Desktop Navigation */}
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Uthrathana</span>
+              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">UTH Rathana</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">
               Full Stack Developer
@@ -318,13 +318,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center">
             <div className="flex space-x-6 mb-8">
-              <a href="https://linkedin.com/in/your-profile" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                <Linkedin size={24} />
+              <a href="https://facebook.com/uth rathana" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <Facebook size={24} />
               </a>
-              <a href="https://github.com/your-username" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="https://github.com/RtzzTheOne" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Github size={24} />
               </a>
-              <a href="mailto:your.email@example.com" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="mailto:crrathana05052005@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Mail size={24} />
               </a>
             </div>
