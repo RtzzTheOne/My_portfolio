@@ -24,3 +24,332 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom animations for language logos */
+@keyframes wiggle {
+  0%, 7% { transform: rotateZ(0); }
+  15% { transform: rotateZ(-15deg); }
+  20% { transform: rotateZ(10deg); }
+  25% { transform: rotateZ(-10deg); }
+  30% { transform: rotateZ(6deg); }
+  35% { transform: rotateZ(-4deg); }
+  40%, 100% { transform: rotateZ(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.3); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.3); }
+  70% { transform: scale(1); }
+}
+
+@keyframes tada {
+  0% { transform: scale3d(1, 1, 1); }
+  10%, 20% { transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
+  30%, 50%, 70%, 90% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+  40%, 60%, 80% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
+  100% { transform: scale3d(1, 1, 1); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Utility classes for animations */
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.animate-tada {
+  animation: tada 2s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-delay {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float-delay-2 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float-delay-3 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes spin-3d {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+@keyframes spin-3d-fast {
+  0% { transform: rotateY(0deg) rotateX(0deg); }
+  50% { transform: rotateY(180deg) rotateX(180deg); }
+  100% { transform: rotateY(360deg) rotateX(360deg); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-delay {
+  0% { opacity: 0; transform: translateY(20px); }
+  20% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-delay-2 {
+  0% { opacity: 0; transform: translateY(20px); }
+  40% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes wiggle {
+  0%, 7%, 14%, 21%, 100% { transform: rotate(0deg); }
+  3.5% { transform: rotate(-5deg); }
+  10.5%, 17.5% { transform: rotate(5deg); }
+}
+
+@keyframes heartbeat {
+  0%, 50%, 100% { transform: scale(1); }
+  25%, 75% { transform: scale(1.1); }
+}
+
+@keyframes tada {
+  0% { transform: scale(1); }
+  10%, 20% { transform: scale(0.9) rotate(-3deg); }
+  30%, 50%, 70%, 90% { transform: scale(1.1) rotate(3deg); }
+  40%, 60%, 80% { transform: scale(1.1) rotate(-3deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+
+/* Apply animations */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float-delay 3.5s ease-in-out infinite 0.5s;
+}
+
+.animate-float-delay-2 {
+  animation: float-delay-2 4s ease-in-out infinite 1s;
+}
+
+.animate-float-delay-3 {
+  animation: float-delay-3 3.2s ease-in-out infinite 1.5s;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 25s linear infinite;
+}
+
+.animate-spin-3d {
+  animation: spin-3d 8s linear infinite;
+}
+
+.animate-spin-3d-fast {
+  animation: spin-3d-fast 2s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in-delay 1.5s ease-out;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fade-in-delay-2 2s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 1s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 1s ease-out;
+}
+
+.animate-count-up {
+  animation: count-up 1.5s ease-out;
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.animate-tada {
+  animation: tada 2s ease-in-out infinite;
+}
+
+/* Hover effects */
+.hover\:animate-none:hover {
+  animation: none;
+}
+
+.hover\:animate-spin-3d-fast:hover {
+  animation: spin-3d-fast 1s ease-in-out infinite;
+}
+
+/* Delay utilities */
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-600 {
+  animation-delay: 0.6s;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Custom utility classes */
+.transform-gpu {
+  transform: translateZ(0);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Enhanced hover effects for better interactivity */
+.group:hover .group-hover\:animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.group:hover .group-hover\:from-sky-400\/40 {
+  --tw-gradient-from: rgb(56 189 248 / 0.4);
+}
+
+.group:hover .group-hover\:to-cyan-400\/40 {
+  --tw-gradient-to: rgb(34 211 238 / 0.4);
+}
+
+.group:hover .group-hover\:from-cyan-400\/40 {
+  --tw-gradient-from: rgb(34 211 238 / 0.4);
+}
+
+.group:hover .group-hover\:to-sky-400\/40 {
+  --tw-gradient-to: rgb(56 189 248 / 0.4);
+}
+
+.group:hover .group-hover\:bg-gray-600\/50 {
+  background-color: rgb(75 85 99 / 0.5);
+}
+
+.group:hover .group-hover\:text-sky-200 {
+  color: rgb(186 230 253);
+}
+
+.group:hover .group-hover\:text-cyan-200 {
+  color: rgb(165 243 252);
+}
+
+.group:hover .group-hover\:hidden {
+  display: none;
+}
+
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+/* Responsive animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Performance optimizations */
+.animate-float,
+.animate-float-delay,
+.animate-float-delay-2,
+.animate-float-delay-3,
+.animate-spin-slow,
+.animate-spin-reverse,
+.animate-spin-3d {
+  will-change: transform;
+  transform: translateZ(0);
+}
