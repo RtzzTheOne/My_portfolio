@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
-import { Github, Linkedin, Mail, Download, ExternalLink, Menu, X, Sun, Moon, Facebook } from 'lucide-react';
+import { Github, Mail, Menu, X, Sun, Moon, Facebook } from 'lucide-react';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Home() {
   const [displayedText, setDisplayedText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
 
-  const titles = ['Full Stack Developer', 'Mathematician', 'Chill Guy'];
+  const titles = useMemo(() => ['Full Stack Developer', 'Mathematician', 'Chill Guy'], []);
 
   useEffect(() => {
     localStorage.removeItem('theme');
@@ -201,7 +201,7 @@ export default function Home() {
                 {/* Text overlay positioned towards bottom */}
                 <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-end rounded-lg pb-16">
                   <h1 className="text-3xl md:text-4xl font-bold text-white mb-3 text-center px-6">
-                    Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-cyan-300">UTH Rathana</span>
+                    Hi, I&rsquo;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-cyan-300">UTH Rathana</span>
                   </h1>
                   <div className="text-xl md:text-2xl text-sky-200 text-center px-6 mb-4 h-8 flex items-center justify-center">
                     <span>{displayedText}</span>
@@ -682,7 +682,7 @@ export default function Home() {
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mr-4 hover:bg-yellow-500/30 transition-all duration-300 animate-pulse hover:animate-wiggle">
                     <svg className="w-8 h-8 text-yellow-500 hover:text-yellow-400 transition-colors duration-300" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25.26.31.23.38.2.44.18.51.15.58.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14.104.05.123-.06 1.23-.16 1.04-.24.87-.32.71-.36.57-.4.44-.42.33-.42.24.4.16.36.1.32.05.24.02.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/>
+                      <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25.26.31.23.38.2.44.18.51.15.58.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33.22-.41.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14.104.05.123-.06 1.23-.16 1.04-.24.87-.32.71-.36.57-.4.44-.42.33-.42.24.4.16.36.1.32.05.24.02.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/>
                     </svg>
                   </div>
                   <div className="flex-1">
@@ -824,9 +824,11 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              My Projects
+            </h2>
             <p className="text-lg text-sky-200 max-w-2xl mx-auto">
-              Here are some of the projects I've worked on. Each one represents a unique challenge and learning experience.
+              Here are some of the projects I&rsquo;ve worked on. Each one represents a unique challenge and learning experience.
             </p>
           </div>
 
@@ -928,9 +930,11 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Get In Touch
+            </h2>
             <p className="text-lg text-sky-200 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+              I&rsquo;m always open to discussing new opportunities, interesting projects, or just having a chat about technology.
             </p>
           </div>
 
