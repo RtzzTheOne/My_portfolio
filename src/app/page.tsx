@@ -235,7 +235,7 @@ export default function Home() {
           <div className="absolute bottom-24 left-32 text-sky-300/30 text-lg animate-float-delay-2 font-mono">[ ]</div>
           <div className="absolute bottom-40 right-40 text-cyan-300/30 text-xl animate-float font-mono">( )</div>
           <div className="absolute top-1/2 left-8 text-sky-400/30 text-2xl animate-float-delay-3 font-mono">;</div>
-          <div className="absolute top-2/3 right-8 text-cyan-400/30 text-lg animate-float-delay font-mono">//</div>
+          <div className="absolute top-2/3 right-8 text-cyan-400/30 text-lg animate-float-delay font-mono">/ / /</div>
           
           {/* Binary rain effect */}
           <div className="absolute top-0 left-1/6 text-sky-400/20 text-xs font-mono leading-3 animate-pulse">
@@ -324,7 +324,7 @@ export default function Home() {
                           École Polytechnique
                         </h3>
                         <p className="text-sky-200 font-medium mb-1 text-sm md:text-base">Concourse IP-Paris 2025</p>
-                        <p className="text-gray-300 text-xs md:text-sm">Preparing for admission to one of France's most prestigious engineering schools</p>
+                        <p className="text-gray-300 text-xs md:text-sm">Preparing for admission to one of France&apos;s most prestigious engineering schools</p>
                         
                         {/* Tech stack badges */}
                         <div className="flex flex-wrap justify-center md:justify-end gap-2 mt-3">
@@ -828,7 +828,7 @@ export default function Home() {
               My Projects
             </h2>
             <p className="text-lg text-sky-200 max-w-2xl mx-auto">
-              Here are some of the projects I&rsquo;ve worked on. Each one represents a unique challenge and learning experience.
+              Here are some of the projects I&apos;ve worked on. Each one represents a unique challenge and learning experience.
             </p>
           </div>
 
