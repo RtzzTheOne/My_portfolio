@@ -221,60 +221,60 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-950 relative overflow-hidden">
+      <section id="about" className="py-16 md:py-20 bg-gray-950 relative overflow-hidden">
         {/* Geometric Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          {/* Large circles */}
-          <div className="absolute top-10 right-10 w-80 h-80 border-2 border-sky-400/20 rounded-full animate-spin-slow"></div>
-          <div className="absolute bottom-20 left-20 w-64 h-64 border-2 border-cyan-400/25 rounded-full animate-spin-reverse"></div>
-          <div className="absolute top-1/4 left-1/3 w-32 h-32 border-2 border-sky-300/30 rounded-full animate-bounce"></div>
+          {/* Large circles - adjusted for mobile */}
+          <div className="absolute top-10 right-10 w-48 h-48 md:w-80 md:h-80 border-2 border-sky-400/20 rounded-full animate-spin-slow"></div>
+          <div className="absolute bottom-20 left-20 w-40 h-40 md:w-64 md:h-64 border-2 border-cyan-400/25 rounded-full animate-spin-reverse"></div>
+          <div className="absolute top-1/4 left-1/3 w-20 h-20 md:w-32 md:h-32 border-2 border-sky-300/30 rounded-full animate-bounce"></div>
           
-          {/* Floating code symbols */}
-          <div className="absolute top-16 left-16 text-sky-400/30 text-2xl animate-float font-mono">&lt;/&gt;</div>
-          <div className="absolute top-32 right-24 text-cyan-400/30 text-xl animate-float-delay font-mono">{ }</div>
-          <div className="absolute bottom-24 left-32 text-sky-300/30 text-lg animate-float-delay-2 font-mono">[ ]</div>
-          <div className="absolute bottom-40 right-40 text-cyan-300/30 text-xl animate-float font-mono">( )</div>
-          <div className="absolute top-1/2 left-8 text-sky-400/30 text-2xl animate-float-delay-3 font-mono">;</div>
-          <div className="absolute top-2/3 right-8 text-cyan-400/30 text-lg animate-float-delay font-mono">/ / /</div>
+          {/* Floating code symbols - adjusted for mobile */}
+          <div className="absolute top-16 left-4 md:left-16 text-sky-400/30 text-lg md:text-2xl animate-float font-mono">&lt;/&gt;</div>
+          <div className="absolute top-32 right-6 md:right-24 text-cyan-400/30 text-base md:text-xl animate-float-delay font-mono">{ }</div>
+          <div className="absolute bottom-24 left-8 md:left-32 text-sky-300/30 text-sm md:text-lg animate-float-delay-2 font-mono">[ ]</div>
+          <div className="absolute bottom-40 right-10 md:right-40 text-cyan-300/30 text-base md:text-xl animate-float font-mono">( )</div>
+          <div className="absolute top-1/2 left-2 md:left-8 text-sky-400/30 text-lg md:text-2xl animate-float-delay-3 font-mono">;</div>
+          <div className="absolute top-2/3 right-2 md:right-8 text-cyan-400/30 text-sm md:text-lg animate-float-delay font-mono">/ / /</div>
           
-          {/* Binary rain effect */}
-          <div className="absolute top-0 left-1/6 text-sky-400/20 text-xs font-mono leading-3 animate-pulse">
+          {/* Binary rain effect - hidden on small mobile */}
+          <div className="absolute top-0 left-1/6 text-sky-400/20 text-xs font-mono leading-3 animate-pulse hidden sm:block">
             1010101<br/>0101010<br/>1100110<br/>0011001<br/>1111000<br/>0000111
           </div>
-          <div className="absolute top-0 right-1/6 text-cyan-400/20 text-xs font-mono leading-3 animate-pulse delay-1000">
+          <div className="absolute top-0 right-1/6 text-cyan-400/20 text-xs font-mono leading-3 animate-pulse delay-1000 hidden sm:block">
             1001101<br/>0110010<br/>1010101<br/>0101010<br/>1100001<br/>0011110
           </div>
           
-          {/* Diagonal lines */}
-          <div className="absolute top-0 right-1/4 w-1 h-80 bg-gradient-to-b from-sky-400/30 to-transparent rotate-45 origin-top animate-pulse"></div>
-          <div className="absolute bottom-0 left-1/4 w-1 h-96 bg-gradient-to-t from-cyan-400/30 to-transparent rotate-45 origin-bottom animate-pulse delay-500"></div>
-          <div className="absolute top-1/3 right-0 w-1 h-64 bg-gradient-to-b from-sky-300/30 to-transparent rotate-45 origin-top animate-pulse delay-1000"></div>
+          {/* Diagonal lines - adjusted for mobile */}
+          <div className="absolute top-0 right-1/4 w-1 h-60 md:h-80 bg-gradient-to-b from-sky-400/30 to-transparent rotate-45 origin-top animate-pulse"></div>
+          <div className="absolute bottom-0 left-1/4 w-1 h-72 md:h-96 bg-gradient-to-t from-cyan-400/30 to-transparent rotate-45 origin-bottom animate-pulse delay-500"></div>
+          <div className="absolute top-1/3 right-0 w-1 h-48 md:h-64 bg-gradient-to-b from-sky-300/30 to-transparent rotate-45 origin-top animate-pulse delay-1000"></div>
           
-          {/* Square elements */}
-          <div className="absolute top-20 left-20 w-6 h-6 bg-sky-400/40 animate-spin"></div>
-          <div className="absolute top-28 left-28 w-4 h-4 bg-cyan-300/30 animate-spin delay-300"></div>
-          <div className="absolute bottom-32 right-32 w-8 h-8 bg-sky-300/35 animate-spin delay-700"></div>
+          {/* Square elements - adjusted for mobile */}
+          <div className="absolute top-20 left-20 w-4 h-4 md:w-6 md:h-6 bg-sky-400/40 animate-spin"></div>
+          <div className="absolute top-28 left-28 w-3 h-3 md:w-4 md:h-4 bg-cyan-300/30 animate-spin delay-300"></div>
+          <div className="absolute bottom-32 right-32 w-6 h-6 md:w-8 md:h-8 bg-sky-300/35 animate-spin delay-700"></div>
           
-          {/* Geometric shapes */}
-          <div className="absolute top-1/2 right-1/4 w-16 h-16 border border-cyan-400/30 rotate-45 animate-spin-slow"></div>
-          <div className="absolute bottom-1/3 left-1/4 w-20 h-20 border border-sky-400/25 rotate-12 animate-pulse"></div>
+          {/* Geometric shapes - adjusted for mobile */}
+          <div className="absolute top-1/2 right-1/4 w-12 h-12 md:w-16 md:h-16 border border-cyan-400/30 rotate-45 animate-spin-slow"></div>
+          <div className="absolute bottom-1/3 left-1/4 w-16 h-16 md:w-20 md:h-20 border border-sky-400/25 rotate-12 animate-pulse"></div>
           
           {/* Gradient overlays */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-sky-800/15 via-transparent to-cyan-800/15"></div>
           <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-cyan-800/15 via-transparent to-sky-800/15"></div>
           
-          {/* Animated elements */}
-          <div className="absolute top-1/3 left-1/4 w-24 h-24 border border-sky-300/25 rounded-full animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/3 w-28 h-28 border border-cyan-300/30 rounded-full animate-pulse delay-1000"></div>
+          {/* Animated elements - adjusted for mobile */}
+          <div className="absolute top-1/3 left-1/4 w-16 h-16 md:w-24 md:h-24 border border-sky-300/25 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/3 w-20 h-20 md:w-28 md:h-28 border border-cyan-300/30 rounded-full animate-pulse delay-1000"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4">
               About Me
-              <span className="ml-2 text-sky-400 animate-bounce">💻</span>
+              <span className="ml-2 text-sky-400 animate-bounce text-xl sm:text-2xl">💻</span>
             </h2>
-            <p className="text-lg text-sky-200 max-w-2xl mx-auto animate-fade-in">
+            <p className="text-base md:text-lg text-sky-200 max-w-2xl mx-auto animate-fade-in px-4">
               My educational journey and academic achievements
             </p>
           </div>
@@ -287,57 +287,62 @@ export default function Home() {
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-sky-400/70 via-cyan-400/70 to-sky-400/70 rounded-full animate-pulse"></div>
               </div>
               
+              {/* Mobile Timeline Line */}
+              <div className="absolute left-4 sm:left-6 w-0.5 h-full bg-gradient-to-b from-sky-400/40 via-cyan-400/40 to-sky-400/40 rounded-full md:hidden">
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-sky-400/60 via-cyan-400/60 to-sky-400/60 rounded-full animate-pulse"></div>
+              </div>
+              
               {/* Timeline Items */}
-              <div className="space-y-8 md:space-y-16">
+              <div className="space-y-12 md:space-y-16">
                 {/* École Polytechnique */}
-                <div className="relative flex flex-col md:flex-row items-center animate-slide-in-left">
-                  {/* Mobile: Timeline Node at top */}
-                  <div className="md:hidden mb-6">
-                    <div className="w-24 h-24 border-4 border-sky-400/50 rounded-full bg-gray-800/80 backdrop-blur-sm hover:border-sky-400/80 transition-all duration-300 ease-out hover:shadow-2xl hover:shadow-sky-400/30 group cursor-pointer transform hover:scale-110 mx-auto">
+                <div className="relative flex flex-col md:flex-row items-start md:items-center animate-slide-in-left">
+                  {/* Mobile: Timeline Node at left */}
+                  <div className="md:hidden mb-4 relative">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 border-3 border-sky-400/50 rounded-full bg-gray-800/80 backdrop-blur-sm hover:border-sky-400/80 transition-all duration-300 ease-out hover:shadow-xl hover:shadow-sky-400/30 group cursor-pointer transform hover:scale-110 absolute left-0 top-0 z-10">
                       <div className="w-full h-full rounded-full bg-gradient-to-br from-sky-400/20 to-cyan-400/20 flex items-center justify-center group-hover:from-sky-400/30 group-hover:to-cyan-400/30 transition-all duration-300 ease-out relative overflow-hidden">
-                        <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center relative z-10 group-hover:bg-white transition-colors duration-300 ease-out p-2">
+                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/90 flex items-center justify-center relative z-10 group-hover:bg-white transition-colors duration-300 ease-out p-1.5 sm:p-2">
                           <Image
                             src="/ecole_logo.png"
                             alt="École Polytechnique"
-                            width={60}
-                            height={60}
+                            width={48}
+                            height={48}
                             className="w-full h-full object-contain"
                           />
                         </div>
                         
                         {/* Orbiting elements */}
-                        <div className="absolute top-1 left-1 w-2 h-2 bg-sky-400/60 rounded-full animate-spin"></div>
+                        <div className="absolute top-1 left-1 w-1.5 h-1.5 bg-sky-400/60 rounded-full animate-spin"></div>
                         <div className="absolute bottom-1 right-1 w-1 h-1 bg-cyan-400/60 rounded-full animate-spin delay-500"></div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex-1 w-full md:pr-8 text-center md:text-right relative">
-                    <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-sky-400/30 hover:border-sky-400/60 transition-all duration-300 ease-out hover:shadow-2xl hover:shadow-sky-400/20 group mx-auto max-w-md md:max-w-none relative hover:z-10 transform-gpu hover:scale-[1.02] hover:-rotate-1 origin-center">
+                  <div className="flex-1 w-full md:pr-8 text-left md:text-right relative ml-20 sm:ml-24 md:ml-0">
+                    <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl p-4 sm:p-5 md:p-6 border border-sky-400/30 hover:border-sky-400/60 transition-all duration-300 ease-out hover:shadow-xl hover:shadow-sky-400/20 group relative hover:z-10 transform-gpu hover:scale-[1.02] hover:-rotate-1 origin-center">
                       {/* Glowing effect */}
                       <div className="absolute inset-0 bg-gradient-to-r from-sky-400/5 to-cyan-400/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out"></div>
                       
                       {/* Content */}
                       <div className="relative z-10">
-                        <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-sky-200 transition-colors duration-300 ease-out flex items-center justify-center md:justify-end">
-                          <span className="mr-2 text-xl md:text-2xl animate-bounce">🎓</span>
-                          École Polytechnique
+                        <h3 className="text-lg sm:text-xl md:text-xl font-bold text-white mb-2 group-hover:text-sky-200 transition-colors duration-300 ease-out flex items-center justify-start md:justify-end">
+                          <span className="mr-2 text-lg sm:text-xl md:text-2xl animate-bounce">🎓</span>
+                          <span className="text-sm sm:text-base md:text-lg">École Polytechnique</span>
                         </h3>
-                        <p className="text-sky-200 font-medium mb-1 text-sm md:text-base">Concourse IP-Paris 2025</p>
-                        <p className="text-gray-300 text-xs md:text-sm">Preparing for admission to one of France&apos;s most prestigious engineering schools</p>
+                        <p className="text-sky-200 font-medium mb-1 text-xs sm:text-sm md:text-base">Concourse IP-Paris 2025</p>
+                        <p className="text-gray-300 text-xs sm:text-sm md:text-sm leading-relaxed">Preparing for admission to one of France&apos;s most prestigious engineering schools</p>
                         
                         {/* Tech stack badges */}
-                        <div className="flex flex-wrap justify-center md:justify-end gap-2 mt-3">
+                        <div className="flex flex-wrap justify-start md:justify-end gap-1.5 sm:gap-2 mt-3">
                           <span className="px-2 py-1 text-xs bg-sky-500/20 text-sky-200 rounded-full border border-sky-400/30 group-hover:bg-sky-500/30 transition-colors duration-300">Mathematics</span>
                           <span className="px-2 py-1 text-xs bg-cyan-500/20 text-cyan-200 rounded-full border border-cyan-400/30 group-hover:bg-cyan-500/30 transition-colors duration-300">Physics</span>
                           <span className="px-2 py-1 text-xs bg-purple-500/20 text-purple-200 rounded-full border border-purple-400/30 group-hover:bg-purple-500/30 transition-colors duration-300">Engineering</span>
                         </div>
 
-                        {/* Expandable section (fixed layout shift) */}
-                        <div className="absolute left-0 top-full mt-2 w-full z-20 hidden group-hover:block">
-                          <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl border border-sky-400/30 p-4 shadow-xl">
-                            <div className="border-t border-sky-400/20 pt-3">
-                              <p className="text-xs text-sky-300 mb-2">Additional Information:</p>
+                        {/* Mobile expandable section */}
+                        <div className="mt-4 group-hover:block hidden md:absolute md:left-0 md:top-full md:mt-2 md:w-full md:z-20">
+                          <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl border border-sky-400/30 p-3 sm:p-4 shadow-xl">
+                            <div className="border-t border-sky-400/20 pt-2 sm:pt-3">
+                              <p className="text-xs text-sky-300 mb-1 sm:mb-2">Additional Information:</p>
                               <ul className="text-xs text-gray-400 space-y-1">
                                 <li>• Competitive entrance examination</li>
                                 <li>• Focus on mathematics and physics</li>
@@ -349,7 +354,7 @@ export default function Home() {
                       </div>
                       
                       {/* Floating particles */}
-                      <div className="absolute top-2 right-2 w-2 h-2 bg-sky-400/50 rounded-full animate-ping"></div>
+                      <div className="absolute top-2 right-2 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-sky-400/50 rounded-full animate-ping"></div>
                       <div className="absolute bottom-2 left-2 w-1 h-1 bg-cyan-400/50 rounded-full animate-ping delay-1000"></div>
                     </div>
                   </div>
@@ -382,23 +387,23 @@ export default function Home() {
                 </div>
 
                 {/* Institute of Technology of Cambodia */}
-                <div className="relative flex flex-col md:flex-row items-center animate-slide-in-right">
-                  {/* Mobile: Timeline Node at top */}
-                  <div className="md:hidden mb-6">
-                    <div className="w-24 h-24 border-4 border-cyan-400/50 rounded-full bg-gray-800/80 backdrop-blur-sm hover:border-cyan-400/80 transition-all duration-300 ease-out hover:shadow-2xl hover:shadow-cyan-400/30 group cursor-pointer transform hover:scale-110 mx-auto">
+                <div className="relative flex flex-col md:flex-row items-start md:items-center animate-slide-in-right">
+                  {/* Mobile: Timeline Node at left */}
+                  <div className="md:hidden mb-4 relative">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 border-3 border-cyan-400/50 rounded-full bg-gray-800/80 backdrop-blur-sm hover:border-cyan-400/80 transition-all duration-300 ease-out hover:shadow-xl hover:shadow-cyan-400/30 group cursor-pointer transform hover:scale-110 absolute left-0 top-0 z-10">
                       <div className="w-full h-full rounded-full bg-gradient-to-br from-cyan-400/20 to-sky-400/20 flex items-center justify-center group-hover:from-cyan-400/30 group-hover:to-sky-400/30 transition-all duration-300 ease-out relative overflow-hidden">
-                        <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center relative z-10 group-hover:bg-white transition-colors duration-300 ease-out p-2">
+                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/90 flex items-center justify-center relative z-10 group-hover:bg-white transition-colors duration-300 ease-out p-1.5 sm:p-2">
                           <Image
                             src="/itc_logo.png"
                             alt="Institute of Technology of Cambodia"
-                            width={60}
-                            height={60}
+                            width={48}
+                            height={48}
                             className="w-full h-full object-contain"
                           />
                         </div>
                         
                         {/* Orbiting elements */}
-                        <div className="absolute top-1 right-1 w-2 h-2 bg-cyan-400/60 rounded-full animate-spin"></div>
+                        <div className="absolute top-1 right-1 w-1.5 h-1.5 bg-cyan-400/60 rounded-full animate-spin"></div>
                         <div className="absolute bottom-1 left-1 w-1 h-1 bg-sky-400/60 rounded-full animate-spin delay-300"></div>
                       </div>
                     </div>
@@ -430,33 +435,33 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  <div className="flex-1 w-full md:pl-8 text-center md:text-left relative">
-                    <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300 ease-out hover:shadow-2xl hover:shadow-cyan-400/20 group mx-auto max-w-md md:max-w-none relative hover:z-10 transform-gpu hover:scale-[1.02] hover:rotate-1 origin-center">
+                  <div className="flex-1 w-full md:pl-8 text-left relative ml-20 sm:ml-24 md:ml-0">
+                    <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl p-4 sm:p-5 md:p-6 border border-cyan-400/30 hover:border-cyan-400/60 transition-all duration-300 ease-out hover:shadow-xl hover:shadow-cyan-400/20 group relative hover:z-10 transform-gpu hover:scale-[1.02] hover:rotate-1 origin-center">
                       {/* Glowing effect */}
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/5 to-sky-400/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out"></div>
                       
                       {/* Content */}
                       <div className="relative z-10">
-                        <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-cyan-200 transition-colors duration-300 ease-out flex items-center justify-center md:justify-start">
-                          <span className="mr-2 text-xl md:text-2xl animate-bounce">🎯</span>
-                          Institute of Technology of Cambodia
+                        <h3 className="text-lg sm:text-xl md:text-xl font-bold text-white mb-2 group-hover:text-cyan-200 transition-colors duration-300 ease-out flex items-center justify-start">
+                          <span className="mr-2 text-lg sm:text-xl md:text-2xl animate-bounce">🎯</span>
+                          <span className="text-sm sm:text-base md:text-lg">Institute of Technology of Cambodia</span>
                         </h3>
-                        <p className="text-cyan-200 font-medium mb-1 text-sm md:text-base">Year1: 2022-2023</p>
-                        <p className="text-cyan-200 font-medium mb-2 text-sm md:text-base">Year2: 2023-2024</p>
-                        <p className="text-gray-300 text-xs md:text-sm">Pursuing higher education in technology and engineering</p>
+                        <p className="text-cyan-200 font-medium mb-1 text-xs sm:text-sm md:text-base">Year1: 2022-2023</p>
+                        <p className="text-cyan-200 font-medium mb-2 text-xs sm:text-sm md:text-base">Year2: 2023-2024</p>
+                        <p className="text-gray-300 text-xs sm:text-sm md:text-sm leading-relaxed">Pursuing higher education in technology and engineering</p>
                         
                         {/* Tech stack badges */}
-                        <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-3">
+                        <div className="flex flex-wrap justify-start gap-1.5 sm:gap-2 mt-3">
                           <span className="px-2 py-1 text-xs bg-cyan-500/20 text-cyan-200 rounded-full border border-cyan-400/30 group-hover:bg-cyan-500/30 transition-colors duration-300">Technology</span>
                           <span className="px-2 py-1 text-xs bg-sky-500/20 text-sky-200 rounded-full border border-sky-400/30 group-hover:bg-sky-500/30 transition-colors duration-300">Engineering</span>
                           <span className="px-2 py-1 text-xs bg-emerald-500/20 text-emerald-200 rounded-full border border-emerald-400/30 group-hover:bg-emerald-500/30 transition-colors duration-300">Innovation</span>
                         </div>
 
-                        {/* Expandable section (fixed layout shift) */}
-                        <div className="absolute left-0 top-full mt-2 w-full z-20 hidden group-hover:block">
-                          <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl border border-cyan-400/30 p-4 shadow-xl">
-                            <div className="border-t border-cyan-400/20 pt-3">
-                              <p className="text-xs text-cyan-300 mb-2">Achievements & Skills:</p>
+                        {/* Mobile expandable section */}
+                        <div className="mt-4 group-hover:block hidden md:absolute md:left-0 md:top-full md:mt-2 md:w-full md:z-20">
+                          <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl border border-cyan-400/30 p-3 sm:p-4 shadow-xl">
+                            <div className="border-t border-cyan-400/20 pt-2 sm:pt-3">
+                              <p className="text-xs text-cyan-300 mb-1 sm:mb-2">Achievements & Skills:</p>
                               <ul className="text-xs text-gray-400 space-y-1">
                                 <li>• Advanced programming concepts</li>
                                 <li>• Software development projects</li>
@@ -470,59 +475,59 @@ export default function Home() {
                       </div>
                       
                       {/* Floating particles */}
-                      <div className="absolute top-2 right-2 w-2 h-2 bg-cyan-400/50 rounded-full animate-ping"></div>
+                      <div className="absolute top-2 right-2 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-cyan-400/50 rounded-full animate-ping"></div>
                       <div className="absolute bottom-2 left-2 w-1 h-1 bg-sky-400/50 rounded-full animate-ping delay-500"></div>
                     </div>
                   </div>
                 </div>
 
                 {/* Angsdok High School */}
-                <div className="relative flex flex-col md:flex-row items-center animate-slide-in-left">
-                  {/* Mobile: Timeline Node at top */}
-                  <div className="md:hidden mb-6">
-                    <div className="w-24 h-24 border-4 border-sky-400/50 rounded-full bg-gray-800/80 backdrop-blur-sm hover:border-sky-400/80 transition-all duration-300 ease-out hover:shadow-2xl hover:shadow-sky-400/30 group cursor-pointer transform hover:scale-110 mx-auto">
+                <div className="relative flex flex-col md:flex-row items-start md:items-center animate-slide-in-left">
+                  {/* Mobile: Timeline Node at left */}
+                  <div className="md:hidden mb-4 relative">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 border-3 border-sky-400/50 rounded-full bg-gray-800/80 backdrop-blur-sm hover:border-sky-400/80 transition-all duration-300 ease-out hover:shadow-xl hover:shadow-sky-400/30 group cursor-pointer transform hover:scale-110 absolute left-0 top-0 z-10">
                       <div className="w-full h-full rounded-full bg-gradient-to-br from-sky-400/20 to-cyan-400/20 flex items-center justify-center group-hover:from-sky-400/30 group-hover:to-cyan-400/30 transition-all duration-300 ease-out relative overflow-hidden">
-                        <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center relative z-10 group-hover:bg-white transition-colors duration-300 ease-out">
-                          <svg className="w-12 h-12 text-sky-600" fill="currentColor" viewBox="0 0 24 24">
+                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/90 flex items-center justify-center relative z-10 group-hover:bg-white transition-colors duration-300 ease-out">
+                          <svg className="w-8 h-8 sm:w-10 sm:h-10 text-sky-600" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
                           </svg>
                         </div>
                         
                         {/* Orbiting elements */}
-                        <div className="absolute top-1 left-1 w-2 h-2 bg-sky-400/60 rounded-full animate-spin"></div>
+                        <div className="absolute top-1 left-1 w-1.5 h-1.5 bg-sky-400/60 rounded-full animate-spin"></div>
                         <div className="absolute bottom-1 right-1 w-1 h-1 bg-cyan-400/60 rounded-full animate-spin delay-500"></div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex-1 w-full md:pr-8 text-center md:text-right relative">
-                    <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-sky-400/30 hover:border-sky-400/60 transition-all duration-300 ease-out hover:shadow-2xl hover:shadow-sky-400/20 group mx-auto max-w-md md:max-w-none relative hover:z-10 transform-gpu hover:scale-[1.02] hover:-rotate-1 origin-center">
+                  <div className="flex-1 w-full md:pr-8 text-left md:text-right relative ml-20 sm:ml-24 md:ml-0">
+                    <div className="bg-gray-800/90 backdrop-blur-sm rounded-xl p-4 sm:p-5 md:p-6 border border-sky-400/30 hover:border-sky-400/60 transition-all duration-300 ease-out hover:shadow-xl hover:shadow-sky-400/20 group relative hover:z-10 transform-gpu hover:scale-[1.02] hover:-rotate-1 origin-center">
                       {/* Glowing effect */}
                       <div className="absolute inset-0 bg-gradient-to-r from-sky-400/5 to-cyan-400/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out"></div>
                       
                       {/* Content */}
                       <div className="relative z-10">
-                        <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-sky-200 transition-colors duration-300 ease-out flex items-center justify-center md:justify-end">
-                          <span className="mr-2 text-xl md:text-2xl animate-bounce">🎓</span>
-                          Angsdok High School
+                        <h3 className="text-lg sm:text-xl md:text-xl font-bold text-white mb-2 group-hover:text-sky-200 transition-colors duration-300 ease-out flex items-center justify-start md:justify-end">
+                          <span className="mr-2 text-lg sm:text-xl md:text-2xl animate-bounce">🎓</span>
+                          <span className="text-sm sm:text-base md:text-lg">Angsdok High School</span>
                         </h3>
-                        <p className="text-sky-200 font-medium mb-1 text-sm md:text-base">Finished BacII 2022</p>
-                        <p className="text-sky-200 font-medium mb-2 text-sm md:text-base flex items-center justify-center md:justify-end">
+                        <p className="text-sky-200 font-medium mb-1 text-xs sm:text-sm md:text-base">Finished BacII 2022</p>
+                        <p className="text-sky-200 font-medium mb-2 text-xs sm:text-sm md:text-base flex items-center justify-start md:justify-end">
                           <span className="mr-1 text-yellow-400">⭐</span>
                           Grade A
                         </p>
                         
                         {/* Achievement badges */}
-                        <div className="flex flex-wrap justify-center md:justify-end gap-2 mt-3">
+                        <div className="flex flex-wrap justify-start md:justify-end gap-1.5 sm:gap-2 mt-3">
                           <span className="px-2 py-1 text-xs bg-yellow-500/20 text-yellow-200 rounded-full border border-yellow-400/30 group-hover:bg-yellow-500/30 transition-colors duration-300">Excellence</span>
                           <span className="px-2 py-1 text-xs bg-green-500/20 text-green-200 rounded-full border border-green-400/30 group-hover:bg-green-500/30 transition-colors duration-300">Achievement</span>
                           <span className="px-2 py-1 text-xs bg-blue-500/20 text-blue-200 rounded-full border border-blue-400/30 group-hover:bg-blue-500/30 transition-colors duration-300">Foundation</span>
                         </div>
 
-                        {/* Expandable section */}
+                        {/* Mobile expandable section */}
                         <div className="mt-4 group-hover:block hidden">
-                          <div className="border-t border-sky-400/20 pt-3">
-                            <p className="text-xs text-sky-300 mb-2">Academic Foundation:</p>
+                          <div className="border-t border-sky-400/20 pt-2 sm:pt-3">
+                            <p className="text-xs text-sky-300 mb-1 sm:mb-2">Academic Foundation:</p>
                             <ul className="text-xs text-gray-400 space-y-1">
                               <li>• Strong mathematical foundation</li>
                               <li>• Scientific methodology</li>
@@ -534,7 +539,7 @@ export default function Home() {
                       </div>
                       
                       {/* Floating particles */}
-                      <div className="absolute top-2 right-2 w-2 h-2 bg-sky-400/50 rounded-full animate-ping"></div>
+                      <div className="absolute top-2 right-2 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-sky-400/50 rounded-full animate-ping"></div>
                       <div className="absolute bottom-2 left-2 w-1 h-1 bg-cyan-400/50 rounded-full animate-ping delay-1000"></div>
                     </div>
                   </div>
@@ -565,35 +570,35 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Floating tech icons */}
-          <div className="flex justify-center space-x-8 mt-8">
-            <div className="text-3xl animate-float hover:scale-125 transition-transform cursor-pointer">⚡</div>
-            <div className="text-3xl animate-float-delay hover:scale-125 transition-transform cursor-pointer">🚀</div>
-            <div className="text-3xl animate-float-delay-2 hover:scale-125 transition-transform cursor-pointer">🔧</div>
-            <div className="text-3xl animate-float-delay-3 hover:scale-125 transition-transform cursor-pointer">📡</div>
+          {/* Floating tech icons - adjusted for mobile */}
+          <div className="flex justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-8 md:mt-8">
+            <div className="text-2xl sm:text-3xl animate-float hover:scale-125 transition-transform cursor-pointer">⚡</div>
+            <div className="text-2xl sm:text-3xl animate-float-delay hover:scale-125 transition-transform cursor-pointer">🚀</div>
+            <div className="text-2xl sm:text-3xl animate-float-delay-2 hover:scale-125 transition-transform cursor-pointer">🔧</div>
+            <div className="text-2xl sm:text-3xl animate-float-delay-3 hover:scale-125 transition-transform cursor-pointer">📡</div>
           </div>
           
-          {/* Achievement Stats */}
-          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+          {/* Achievement Stats - adjusted for mobile */}
+          <div className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             <div className="text-center group hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl md:text-4xl font-bold text-sky-400 animate-count-up">3+</div>
-              <div className="text-sm text-sky-200 mt-1">Years Learning</div>
-              <div className="text-2xl mt-2 animate-bounce">📚</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-sky-400 animate-count-up">3+</div>
+              <div className="text-xs sm:text-sm text-sky-200 mt-1">Years Learning</div>
+              <div className="text-lg sm:text-2xl mt-1 sm:mt-2 animate-bounce">📚</div>
             </div>
             <div className="text-center group hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl md:text-4xl font-bold text-cyan-400 animate-count-up delay-200">8+</div>
-              <div className="text-sm text-cyan-200 mt-1">Technologies</div>
-              <div className="text-2xl mt-2 animate-bounce delay-200">⚡</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-cyan-400 animate-count-up delay-200">8+</div>
+              <div className="text-xs sm:text-sm text-cyan-200 mt-1">Technologies</div>
+              <div className="text-lg sm:text-2xl mt-1 sm:mt-2 animate-bounce delay-200">⚡</div>
             </div>
             <div className="text-center group hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl md:text-4xl font-bold text-emerald-400 animate-count-up delay-400">5+</div>
-              <div className="text-sm text-emerald-200 mt-1">Projects</div>
-              <div className="text-2xl mt-2 animate-bounce delay-400">🚀</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-400 animate-count-up delay-400">5+</div>
+              <div className="text-xs sm:text-sm text-emerald-200 mt-1">Projects</div>
+              <div className="text-lg sm:text-2xl mt-1 sm:mt-2 animate-bounce delay-400">🚀</div>
             </div>
             <div className="text-center group hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl md:text-4xl font-bold text-purple-400 animate-count-up delay-600">∞</div>
-              <div className="text-sm text-purple-200 mt-1">Passion</div>
-              <div className="text-2xl mt-2 animate-bounce delay-600">💖</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-400 animate-count-up delay-600">∞</div>
+              <div className="text-xs sm:text-sm text-purple-200 mt-1">Passion</div>
+              <div className="text-lg sm:text-2xl mt-1 sm:mt-2 animate-bounce delay-600">💖</div>
             </div>
           </div>
         </div>
@@ -917,7 +922,7 @@ export default function Home() {
           
           {/* Geometric shapes */}
           <div className="absolute top-1/3 left-1/4 w-18 h-18 border border-sky-400/30 rotate-45"></div>
-          <div className="absolute bottom-1/3 right-1/3 w-22 h-22 border border-cyan-400/25 rotate-12"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-22 h-22 border border-cyan-400/25 rotate-12"></div>
           
           {/* Gradient overlays */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-sky-800/15 via-transparent to-cyan-800/15"></div>
